@@ -1,0 +1,40 @@
+export const RData = [
+  {
+    id: 1,
+    img: "https://plus.unsplash.com/premium_photo-1661884238187-1c274b3c3413?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGRlbHV4JTIwaG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+    name: "Delux",
+    price: "150",
+    time: "Night",
+    desc: "Modern comfort awaits in our Deluxe Room, offering a blend of contemporary design and essential amenities for a relaxing stay.",
+    capacity: 1,
+    air: true,
+    wifi: true,
+    luxuryAmenities: true,
+  },
+
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D",
+    name: "Standard",
+    price: "100",
+    time: "Night",
+    desc: "Enjoy simple comforts in our Standard Room, providing a cozy atmosphere and practical amenities for a delightful and restful experience.",
+    capacity: 2,
+    air: true,
+    wifi: true,
+    luxuryAmenities: true,
+  },
+
+  {
+    id: 3,
+    img: "https://images.unsplash.com/photo-1593006526979-5f8814c229f9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdGVsJTIwcm9vbXN8ZW58MHx8MHx8fDA%3D",
+    name: "Superior",
+    price: "55",
+    time: "Night",
+    desc: "Experience elegant luxury in our Superior Room, featuring upscale furnishings, amenities, and stunning views for a refined and memorable stay.",
+    capacity: 4,
+    air: true,
+    wifi: true,
+    luxuryAmenities: true,
+  },
+];
