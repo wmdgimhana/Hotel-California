@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Section1 = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-[10px] mt-[100px] mb-[50px]">
+    <div className="flex flex-col justify-center text-center items-center gap-[10px] mt-[100px] mb-[50px]">
       {/* title */}
       <div>
         <motion.span
@@ -21,7 +21,7 @@ const Section1 = () => {
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="w-[500px] text-center"
+        className="md:w-[500px] text-center"
       >
         <p className="Poppins text-[15px]">
           Indulge in the pinnacle of luxury with our Deluxe Room. Meticulously

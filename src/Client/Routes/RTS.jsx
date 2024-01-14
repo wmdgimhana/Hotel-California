@@ -8,6 +8,9 @@ import Restaurant from "../Pages/Restaurant/Restaurant";
 import Room from "../Pages/Room/Room";
 import PrivacyPolicy from "../Pages/Privacy Policy/PrivacyPolicy";
 import TermsAndConditions from "../Pages/Terms And Conditions/TermsAndConditions";
+import Login from "../Pages/Login/Login";
+import Signup from "../Pages/Signup/Signup";
+import MyAccount from "../Pages/My Account/MyAccount";
 
 const RTS = () => {
   return (
@@ -20,6 +23,9 @@ const RTS = () => {
       <Route path="room/:id" element={<Room />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
       <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} />
+      <Route path="my-account" element={<MyAccount />} />
     </Routes>
   );
 };

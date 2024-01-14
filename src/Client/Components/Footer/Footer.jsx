@@ -67,6 +67,12 @@ const Footer = () => {
             >
               restaurant
             </Link>
+            <Link
+              to={"/my-account"}
+              className="cursor-pointer text-gray-200 w-fit hover:text-white"
+            >
+              My Account
+            </Link>
           </div>
         </div>
 

@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const BookNow = () => {
   return (
-    <div className="my-[100px] mx-[50px]">
+    <div className="my-[100px] md:mx-[50px] mx-[20px]">
       <motion.div
         initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex shadow-xl hover:shadow-2xl transition-opacity justify-center items-center p-[20px] border-solid border-gray-100 border-[1px] bg-white rounded-md"
+        className="flex shadow-xl hover:shadow-2xl transition-opacity justify-center items-center md:p-[20px] p-[10px] border-solid border-gray-100 border-[1px] bg-white gap-[10px] md:gap-0 rounded-md md:flex-row flex-col"
       >
-        <div className="p-[50px]  flex flex-col gap-[50px] flex-1 z-[999]">
+        <div className="md:p-[50px] p-[10px]  flex flex-col gap-[50px] flex-1 z-[999]">
           {/* title */}
           <div className="flex flex-col gap-[10px]">
             <span className="Kau font-[700] text-[18px] text-center">

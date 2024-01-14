@@ -38,18 +38,44 @@ const Filter = () => {
   //   options for Occupancy
   const occOptions = [
     {
-      label: "1",
-      value: "1",
+      label: "1 Adult",
+      value: "1 Adult",
     },
 
     {
-      label: "2",
-      value: "2",
+      label: "2 Adults",
+      value: "2 Adults",
     },
 
     {
-      label: "4",
-      value: "4",
+      label: "3 Adults",
+      value: "3 Adults",
+    },
+    {
+      label: "4 Adults",
+      value: "4 Adults",
+    },
+  ];
+
+  //   options for Childrens
+  const childOptions = [
+    {
+      label: "1 Child",
+      value: "1 Child",
+    },
+
+    {
+      label: "2 Children",
+      value: "2 Children",
+    },
+
+    {
+      label: "3 Children",
+      value: "3 Children",
+    },
+    {
+      label: "4 Children",
+      value: "4 Children",
     },
   ];
 
@@ -87,6 +113,13 @@ const Filter = () => {
     setOccupancy(value);
   };
 
+  // setting childrens
+  const [childrens, setChildrens] = useState(1);
+
+  const handleChildrens = (value) => {
+    setChildrens(value);
+  };
+
   //   setting bed type
   const [bedType, setBedType] = useState("single");
 
@@ -111,7 +144,7 @@ const Filter = () => {
         className="bg-white shadow-lg p-[20px] w-[100%] border-solid border-gray-100 border-[1px] rounded-md flex justify-between flex-wrap"
       >
         {/* filter item 1 */}
-        <div className="w-[250px]">
+        <div className="w-[200px]">
           {/* price range filter */}
           {/* title */}
           <div className="mb-[10px]">
@@ -130,7 +163,7 @@ const Filter = () => {
         </div>
 
         {/* filter item 2 */}
-        <div className="w-[250px]">
+        <div className="w-[200px]">
           {/* amenities filter */}
           {/* title */}
           <div className="mb-[10px]">
@@ -157,11 +190,11 @@ const Filter = () => {
         </div>
 
         {/* filter item 3 */}
-        <div className="w-[250px]">
+        <div className="w-[200px]">
           {/* title */}
           <div className="mb-[10px]">
             <span className="Sora uppercase text-[14px] font-[700] tracking-[2px]">
-              Occupancy
+              Guests
             </span>
           </div>
 
@@ -183,7 +216,33 @@ const Filter = () => {
         </div>
 
         {/* filter item 4 */}
-        <div className="w-[250px]">
+        <div className="w-[200px]">
+          {/* title */}
+          <div className="mb-[10px]">
+            <span className="Sora uppercase text-[14px] font-[700] tracking-[2px]">
+              Childrens
+            </span>
+          </div>
+
+          {/* filter */}
+          <div>
+            <div>
+              <Select
+                placeholder="Please select"
+                defaultValue={"1"}
+                style={{
+                  width: "100%",
+                }}
+                options={childOptions}
+                onChange={handleChildrens}
+                value={childrens}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* filter item 5 */}
+        <div className="w-[200px]">
           {/* title */}
           <div className="mb-[10px]">
             <span className="Sora uppercase text-[14px] font-[700] tracking-[2px]">
